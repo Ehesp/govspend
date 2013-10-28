@@ -8,7 +8,7 @@
 	
 	$data = array();
 	
-	if(!mysql_select_db($database, mysql_connect($host, $user, $password)))
+	if(!mysql_select_db($database, $connect = mysql_connect($host, $user, $password)))
 	{
 		$data['success'] = false;
 		$data['timestamp'] = time();
