@@ -9,7 +9,7 @@ Access API via:
 
 Other Parameters:
 
-*select=columnName1|columnName2|columnName3*
+*select=columnName1|columnName2|columnName3*<br />
 *order=columnName1*
 
 String together with &:
