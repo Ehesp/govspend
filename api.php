@@ -29,7 +29,6 @@
 		
 			if($_GET["type"] == "pipeline")
 			{
-				$i = 0;
 				while($row = mysql_fetch_array($execute))
 				{
 					// First 4 rows of the data are information, not data.
