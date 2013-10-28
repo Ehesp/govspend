@@ -16,10 +16,10 @@
 	}
 	else
 	{
-		$query = "SELECT * from `" . $_GET["type"] ."` ";
+		$query = "SELECT ". (!isset($_GET["select"]) ? "*" : "id," . str_replace("|", ",",$_GET["select"])) ." from `" . $_GET["type"] ."` ";
 		if(isset($_GET["order"]))
 				$query .= "ORDER BY `" . $_GET["type"] . "`.`". $_GET["order"] ."` ASC";
-
+		
 		if($execute = mysql_query($query))
 		{
 			$data['success'] = true;
@@ -66,7 +66,7 @@
 		{
 			$data['success'] = false;
 			$data['timestamp'] = time();
-			$data['error'] = 'Invalid parameters.';
+			$data['error'] = 'Invalid parameters :: REQUIRED (type) OPTIONAL (select, order)';
 		}
 	}
 	
