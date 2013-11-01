@@ -1,0 +1,20 @@
+body { padding-top: 60px; padding-bottom: 40px; }
+
+.floatL { float:left; }
+.floatR { float:right; }
+
+.container-fluid { width: 1000px; margin: auto;}
+.navbar-inverse .navbar-inner { background: black; }
+.conf-high { background: green; }
+.conf-med { background: orange; }
+.conf-low { background: red; }
+
+.price { -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; }
+.title { line-height: 10px; }
+h3.title a:link { text-decoration: underline; line-height: 30px; }
+.org-name { color: green; }
+.value { color: white;  text-align: center; line-height: 50px; vertical-align: center; font-weight: bold;}
+.results { margin-bottom: 10px; }
+.datepick { width: 100%; }
+.amount { width: 100%; }
+.locations { width:100%; }
